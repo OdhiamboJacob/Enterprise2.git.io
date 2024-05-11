@@ -38,7 +38,6 @@ h1{
 }
 #menu{
   width: 100%;
-  float:right;
   background-color: aqua;
 }
 #menu ul{
@@ -46,6 +45,7 @@ h1{
   margin: 0px;
   padding: 0px 0px 0px 5px;
   width: 100%;
+  align-items: center !important;
 }
 
 #menu ul li{
@@ -68,7 +68,7 @@ h1{
 #searchbar{
   width: 50%;
   margin: 0px ;
-  padding: 0px 0px 5px 10px;
+  padding: 0px 0px 5px 5px;
 }
 /*section x1*/
 #x1{
@@ -77,6 +77,9 @@ h1{
   color: black !important;
   font-weight: bold;
   padding-top: 10px;
+}
+#x1 h2{
+  background-color: aliceblue;
 }
 img{
     width: 200px !important;
@@ -133,6 +136,8 @@ img{
   margin: 10px 0px 10px 5px;
   border-radius: 10px;
   color: black;
+  font-weight: 100;
+  background-color: rgb(233, 231, 228);
 }
 /*section x4*/
 #follow{
@@ -165,6 +170,9 @@ h2{
   font-family: serif;
   font-size: 12px !important;
   font-weight: bold !important;
+  background-color: aliceblue;
+  text-align: center !important;
+  margin: 0px 20px 0px 5px;
 }
 h3{
   text-transform: capitalize;

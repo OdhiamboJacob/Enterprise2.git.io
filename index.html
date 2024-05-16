@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 </head>
 <body>
-    <header>
-        <div class="d-block d-md-block" id="logocar">
+    <header class="position-sticky">
+        <div class="d-block d-md-block " id="logocar">
             <div id="logo" class="d-flex container-fluid">
                 <img src="./media/Sheriff Group Logo.jpeg" alt="Service Logo" class="rounded-circle">
                 <div class="container-fluid text-center">
@@ -20,9 +20,33 @@
                 <div class="d-block d-md-flex d-lg-flex " id="menu">
                     <ul class=" justify-content-center container-fluid" >
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">About</a>
+                            <div class="sub1">
+                                <ul>
+                                    <li><a href="#">Mission</a></li>
+                                    <li><a href="#">Vision</a></li>
+                                    <li><a href="#">Core Values</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">Services</a>
+                            <div class="sub1">
+                                <ul>
+                                    <li><a href="#">Drone</a></li>
+                                    <li><a href="#">Surveylance</a></li>
+                                    <li><a href="#">LiDAR</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="/Enterprice2/Shop.html" target="_blank">Shop</a>
+                            <div class="sub1">
+                                <ul>
+                                    <li><a href="#">Drone</a></li>
+                                    <li><a href="#">Surveylance</a></li>
+                                    <li><a href="#">LiDAR</a></li>
+                                </ul>
+                            </div>
+                        </li>
                         <li><a href="#">Contact</a></li>
                     </ul>
                     <div class=" d-flex d-md-flex text-md-right" id="searchbar">
@@ -33,10 +57,16 @@
             </div>
         </div>
     </header>
+    <section class=" container-fliud d-block" id="x0">
+        <div class="container-fliud justify-content-center" id="landing1">
+            <img src="/Enterprice2/media/DR1.jpg" alt="Introductory drone">
+        </div>
+    </section>
+
     <section id="x1">
-        <div id="cards1">
+        <div class="cd2">
             <h2 class="container">New Arivals</h2>
-            <div class="d-block d-md-flex" >
+            <div class="d-block d-md-flex" id="cards1">
                 <div class=" card" id="c1">
                     <div class="card-header">LiDAR Drone</div>
                     <div class="card-body">
@@ -52,7 +82,7 @@
                     <div class="card-footer"><a href="#" class="btn btn-primary">View Details</a></div>
                 </div>
                 <div class="card" id="c3">
-                    <div class="card-header">Flir-GPS</div>
+                    <div class="card-header">Garmin-GPS</div>
                     <div class="card-body">
                         <img src="./media/gramin_navigator_PNG17.png" alt="GpsReciever" >
                     </div>
@@ -68,7 +98,7 @@
                 <div class="card col2" id="c5">
                     <div class="card-header" >Raymarine-GPS</div>
                     <div class="card-body">
-                        <img src="./media/gramin_navigator_PNG17.png" alt="GpsReciever" >
+                        <img src="./media/Raymarine_GPS.jpeg" alt="GpsReciever" >
                     </div>
                     <div class="card-footer"><a href="#" class="btn btn-primary">View Details</a></div>
                 </div>
@@ -125,9 +155,9 @@
     </section>
 
     <section id="s2">
-        <div id="cards2">
+        <div class="cd2">
             <h2>Recomended for you</h2>
-            <div class="d-block d-md-flex" >
+            <div class="d-block d-md-flex" id="cards2">
                 <div class=" card" id="c6">
                     <div class="card-header">HDC Drone</div>
                     <div class="card-body">
@@ -143,9 +173,9 @@
                     <div class="card-footer"><a href="#" class="btn btn-primary">View Details</a></div>
                 </div>
                 <div class="card" id="c8">
-                    <div class="card-header">Garmin 2018</div>
+                    <div class="card-header">Raymarine GPS Antenna</div>
                     <div class="card-body">
-                        <img src="./media/gramin_navigator_PNG17.png" alt="GpsReciever" >
+                        <img src="./media/Raymarine_Antenna.jpeg" alt="GpsReciever" >
                     </div>
                     <div class="card-footer"><a href="#" class="btn btn-primary">View Details</a></div>
                 </div>
@@ -166,6 +196,7 @@
             </div>
         </div>
     </section>
+
     <section id="s3">
         <div class="d-block d-md-flex" id="about">
             <div class="d-block ">
@@ -177,6 +208,7 @@
             </div>
         </div>
     </section>
+
     <section id="s4">
         <div class="-caption d-block" id="follow">
             <h2>Follow us on Social Media</h2>

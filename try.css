@@ -9,6 +9,9 @@ header{
   width: 100%;
   margin: 0px;
   padding: 0px;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
 }
 h1{
   color: black;
@@ -22,7 +25,7 @@ h1{
 }
 #logo{
   display: flex;
-  background-color: aqua;
+  background-color: rgba(17, 201, 176, 0.9);
   margin: 0px !important;
   padding: 0px !important;
   width: 100% !important;
@@ -38,7 +41,7 @@ h1{
 }
 #menu{
   width: 100%;
-  background-color: aqua;
+  background-color:rgba(17, 201, 176, 0.7);
 }
 #menu ul{
   display: inline-flex;
@@ -61,7 +64,7 @@ h1{
 }
 
 #menu ul li a:hover{
-  background-color: rgb(245, 247, 246);
+  background-color: rgba(245, 247, 246,0.7);
   border-radius: 10px;
   padding: 3px;
 }
@@ -69,6 +72,46 @@ h1{
   width: 50%;
   margin: 0px ;
   padding: 0px 0px 5px 5px;
+}
+.sub1{
+  display: none;
+  z-index: 1;
+  border-radius: 10px;
+}
+#menu ul li:hover .sub1{
+  display: block;
+  position: absolute;
+  background: rgb(223, 223, 201);
+  margin-top: -8px;
+  margin-left: -30px;
+  transition: 0.4s;
+}
+#menu ul li:hover .sub1 ul{
+  display: block;
+  text-align: center;
+  margin: 10px;
+  margin-left: -10px;
+}
+#menu ul li:hover .sub1 ul li{
+  width: 130px;
+  padding: 10px;
+  border-bottom: 1px dotted black;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+  color: blue;
+}
+/*section X0*/
+
+#x0{
+  margin-top: 30px !important;
+  text-align: center;
+  color: black !important;
+  font-weight: bold;
+  padding-top: 10px;
+}
+#x0 img{
+  width: 80% !important;
 }
 /*section x1*/
 #x1{
@@ -127,6 +170,10 @@ img{
   border: 1px solid rgb(205, 205, 211);
   border-radius: 10px;
   margin: 0px;
+}
+.cd2{
+  background-color: white;
+  border-radius: 15px;
 }
 
 /*section x3*/
@@ -218,4 +265,22 @@ h3{
   border-radius: 10px !important;
   margin: 0px 0px 0px 0px !important;
   font-size: 10px !important;
+}
+
+/*shop styles */
+/* Custom Styles for Navbar Dropdown Menu */
+
+.navbar-nav .dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+}
+
+.navbar-nav .nav-item:hover .dropdown-menu {
+  display: block;
+}
+.card{
+  height: 400px !important;
+  align-items: center;
 }
